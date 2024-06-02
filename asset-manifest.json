@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ComplimentGenerator/static/css/main.dfba54a5.css",
-    "main.js": "/ComplimentGenerator/static/js/main.c92e088d.js",
+    "main.js": "/ComplimentGenerator/static/js/main.d1b6d3b1.js",
     "index.html": "/ComplimentGenerator/index.html",
     "main.dfba54a5.css.map": "/ComplimentGenerator/static/css/main.dfba54a5.css.map",
-    "main.c92e088d.js.map": "/ComplimentGenerator/static/js/main.c92e088d.js.map"
+    "main.d1b6d3b1.js.map": "/ComplimentGenerator/static/js/main.d1b6d3b1.js.map"
   },
   "entrypoints": [
     "static/css/main.dfba54a5.css",
-    "static/js/main.c92e088d.js"
+    "static/js/main.d1b6d3b1.js"
   ]
 }
