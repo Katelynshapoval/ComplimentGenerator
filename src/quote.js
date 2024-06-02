@@ -17,13 +17,14 @@ function GenerateQuote() {
     "One day, I really want us to say 'We made it' while living together in Italy.",
     "No matter what happens in the future, I want to be by your side.",
     "I absolutely adore your smile.",
-    "I still cannot that I have such a perfect girlfriend.",
+    "I still cannot believe that I have such a perfect girlfriend.",
     "Fuck france.",
     "I really want to kiss you, baby.",
     "Calling you immediately makes my day better.",
     "I love you.",
     "I love everything about you - your body, your personality, your smile, your sense of humour.",
     "No matter what you say about yourself, you will always be perfect to me.",
+    "I love you more. Period.",
   ];
 
   // useEffect hook to set the initial compliment when the component mounts
