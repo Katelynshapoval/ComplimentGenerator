@@ -13,12 +13,18 @@ body {
   overflow: hidden;
 }
 
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Button */
 .changeQuoteButton {
   border-radius: 4px;
   border: 1px solid rgb(133, 133, 133);
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  /* margin: 0 10px 0 10px; */
 }
 
 .changeQuoteButton {
@@ -35,6 +41,7 @@ body {
   cursor: pointer;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s; /* Safari */
+  width: 100px;
 }
 
 .changeQuoteButton:hover {
@@ -89,7 +96,7 @@ body {
 
 .compliment p {
   text-align: center;
-  max-width: 350px;
+  max-width: 310px;
 }
 
 .compliment {
@@ -176,7 +183,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 17%;
+  top: 13%;
 }
 
 .ears {

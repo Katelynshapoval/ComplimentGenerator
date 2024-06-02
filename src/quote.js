@@ -25,6 +25,8 @@ function GenerateQuote() {
     "I love everything about you - your body, your personality, your smile, your sense of humour.",
     "No matter what you say about yourself, you will always be perfect to me.",
     "I love you more. Period.",
+    "You're the only one I want.",
+    "You're everything I've ever dreamed about.",
   ];
 
   // useEffect hook to set the initial compliment when the component mounts
@@ -40,6 +42,26 @@ function GenerateQuote() {
       randomCompliment = getRandomCompliment(listOfCompliments);
     }
     setCompliment(randomCompliment);
+  }
+  function previousCompliment() {
+    let index = listOfCompliments.indexOf(compliment);
+    if (index == 0) {
+      index = listOfCompliments.length - 1;
+    } else {
+      index -= 1;
+    }
+    let newCompliment = listOfCompliments[index];
+    setCompliment(newCompliment);
+  }
+  function nextCompliment() {
+    let index = listOfCompliments.indexOf(compliment);
+    if (index == listOfCompliments.length - 1) {
+      index = 0;
+    } else {
+      index += 1;
+    }
+    let newCompliment = listOfCompliments[index];
+    setCompliment(newCompliment);
   }
 
   return (
@@ -58,10 +80,19 @@ function GenerateQuote() {
         {/* Display the current compliment */}
         <div className="compliment">
           <p>{compliment}</p>
-          {/* Button to change the compliment */}
-          <button className="changeQuoteButton" onClick={makeCompliment}>
-            Change
-          </button>
+          <div className="buttons">
+            {/* Go to the previous compliment */}
+            <button className="changeQuoteButton" onClick={previousCompliment}>
+              Previous
+            </button>
+            {/* Button to change the compliment */}
+            <button className="changeQuoteButton" onClick={makeCompliment}>
+              Random
+            </button>
+            <button className="changeQuoteButton" onClick={nextCompliment}>
+              Next
+            </button>
+          </div>
         </div>
       </div>
     </div>
